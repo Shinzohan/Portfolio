@@ -2,14 +2,12 @@
 import { motion, useInView } from "framer-motion";
 import { useRef,Suspense} from "react";
 import StarField from "@/components/starry";
+import "../globals.css"
 
 
 
 const AboutPage = () => {
-
-
   const skillRef = useRef();
-  // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px", once: true });
 
   const experienceRef = useRef();

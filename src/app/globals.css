@@ -17,3 +17,20 @@ body {
   box-shadow: 0 0 10px rgba(199, 54, 89, 0.9);
 }
 
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C73659
+}
+
+@media screen and (max-width: 480px) {
+  ::-webkit-scrollbar-track {
+      display: none;
+  }
+}

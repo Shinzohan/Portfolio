@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
 import Image from 'next/image'
 import NavLink from "./navLinks";
-import { motion, stagger,AnimatePresence } from "framer-motion";
+import { motion,AnimatePresence } from "framer-motion";
 
 
 

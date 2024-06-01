@@ -9,7 +9,7 @@ const Notification = ({ className, title }) => {
     transition={{ duration: 2, repeat: Infinity }}
       className={`${
         className || ''
-      } flex items-center p-4 pr-6 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl gap-5 relative`}
+      } flex items-center p-4 pr-6 backdrop-blur border-black rounded-2xl gap-5 relative`}
     >
       <Image
         src="/image-1.png"

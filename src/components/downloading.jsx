@@ -30,7 +30,7 @@ const Downloading = () => {
         initial={{ y: 0 }}
         animate={{ y: [-10, 10, -10] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="hidden absolute left-96 bottom-[7.5rem] px-1 py-1 backdrop-blur border border-n-1/10 rounded-2xl xl:flex"
+        className="hidden absolute left-96 bottom-[7.5rem] px-1 py-1 backdrop-blur border-black border-n-1/10 rounded-2xl xl:flex"
         onClick={handleDownload}
         style={{ cursor: 'pointer' }}
       >

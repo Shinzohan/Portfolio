@@ -1,15 +1,16 @@
 "use client";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Notification from "@/components/Notification";
 import Downloading from "@/components/downloading";
 import Link from "next/link";
+import "./globals.css"
 
 
 const Homepage = () => {
   return  (
 
+    
     
     <motion.div
     className="h-full bg-black"
@@ -17,16 +18,15 @@ const Homepage = () => {
     animate={{ y: "0%" }}
     transition={{ duration: 1 }}
   >
-    <div className="h-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll font-sans">
+    <div className="h-full w-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-hidden font-sans">
       {/* IMAGE CONTAINER */}
       <div className="relative w-full flex justify-center items-center mb-8">
         <div className="relative w-[300px] h-[300px] xl:w-[300px] xl:h-[400px]">
         <Image
          src="/hero.gif"
-         priority
-         quality={100}
          alt="Hero"
          fill
+         sizes ="true"
          className="object-contain"
          />
           <motion.svg
@@ -102,6 +102,7 @@ const Homepage = () => {
     </div>
    <Downloading />
   </motion.div>
+ 
   
 
   );

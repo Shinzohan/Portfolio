@@ -36,8 +36,7 @@ const Portfoliopage = (props) => {
             alt="Project Image 1"
             width={500}
             height={400} 
-            objectFit="cover"
-            className="rounded-t-[2rem] rounded-[1rem]"/>
+            className="rounded-t-[2rem] rounded-[1rem] object-cover"/>
             
             {/* Header */}
             <h2 className="font-bold text-3xl text-center text-black mt-4">ONIBI</h2>
@@ -60,8 +59,7 @@ const Portfoliopage = (props) => {
             alt="Project Image 1"
             width={500}
             height={400} 
-            objectFit="cover"
-            className="rounded-t-[2rem] rounded-[1rem]"
+            className="rounded-t-[2rem] rounded-[1rem] object-cover"
     />
             
             {/* Header */}
