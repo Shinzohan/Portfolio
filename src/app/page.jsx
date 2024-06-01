@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Notification from "@/components/Notification";
 import Downloading from "@/components/downloading";
 import Link from "next/link";
+import { myLoader } from "../../imageLoader";
 import "./globals.css"
 
 
@@ -23,6 +24,7 @@ const Homepage = () => {
       <div className="relative w-full flex justify-center items-center mb-8">
         <div className="relative w-[300px] h-[300px] xl:w-[300px] xl:h-[400px]">
         <Image
+         loader={myLoader}
          src="/hero.gif"
          alt="Hero"
          fill

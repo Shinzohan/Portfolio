@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import MyButton from "@/components/Button";
+import { myLoader } from "../../../imageLoader";
 import "../globals.css"
 
-const Portfoliopage = (props) => {
+const Portfoliopage = () => {
   return (
     <motion.div
       className="h-full"
@@ -32,6 +33,7 @@ const Portfoliopage = (props) => {
             
             {/* Image */}
             <Image
+            loader={myLoader}
             src="/ONIBI.png"
             alt="Project Image 1"
             width={500}
@@ -55,6 +57,7 @@ const Portfoliopage = (props) => {
             
             {/* Image */}
             <Image
+            loader={myLoader}
             src="/Piano.jpg"
             alt="Project Image 1"
             width={500}

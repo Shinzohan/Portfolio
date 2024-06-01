@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { myLoader } from '../../imageLoader';
 
 const Notification = ({ className, title }) => {
   return (
@@ -12,6 +13,7 @@ const Notification = ({ className, title }) => {
       } flex items-center p-4 pr-6 backdrop-blur border-black rounded-2xl gap-5 relative`}
     >
       <Image
+      loader={myLoader} 
         src="/image-1.png"
         width={62}
         height={62}
@@ -26,6 +28,8 @@ const Notification = ({ className, title }) => {
           <ul className="flex -m-0.5">
             <li className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden">
               <Image
+              loader={myLoader} 
+
                 src="/image-2.png"
                 width={20}
                 height={20}
@@ -35,6 +39,7 @@ const Notification = ({ className, title }) => {
             </li>
             <li className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden">
               <Image
+              loader={myLoader} 
                 src="/image-3.png"
                 width={20}
                 height={20}
@@ -44,6 +49,7 @@ const Notification = ({ className, title }) => {
             </li>
             <li className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden">
               <Image
+              loader={myLoader} 
                 src="/image-4.png"
                 width={20}
                 height={20}

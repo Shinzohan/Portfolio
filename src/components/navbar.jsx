@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from 'next/image'
 import NavLink from "./navLinks";
+import { myLoader } from "../../imageLoader";
 import { motion,AnimatePresence } from "framer-motion";
 
 
@@ -106,12 +107,15 @@ const Navbar =() => {
             <div className='hidden md:flex gap-4 w-1/3 '>
             <Link href="https://github.com/Shinzohan" target="_blank">
             <div className="p-2 bg-white rounded-full">
-            <Image src="/github.png" alt='' width={24} height={24} />
+            <Image 
+            loader={myLoader}
+            src="/github.png" alt='' width={24} height={24} />
             </div>
             </Link>
             <Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
             <div className="p-2 bg-white rounded-full">
-            <Image src="/linkedin.png" alt='' width={24} height={24} />
+            <Image
+             loader={myLoader} src="/linkedin.png" alt='' width={24} height={24} />
             </div>
             </Link>
 
