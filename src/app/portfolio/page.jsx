@@ -1,0 +1,148 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import MyButton from "@/components/Button";
+import "../globals.css"
+
+const Portfoliopage = (props) => {
+  return (
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+    >
+      {/* Container to remove white space */}
+      <div className="h-full overflow-scroll justify-center font-sans relative z-10 ">
+        {/* Title */}
+        <div className="flex justify-center mt-10">
+          <div className="border-2 relative border-solid border-black bg-light p-10 bg-white max-w-lg w-full flex justify-center text-4xl">
+            <div className="absolute left-3 top-3 bottom-3 -z-10 w-[100%] h-[97.8%]  bg-[#C73659]" />
+            Showcase of My Works
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-12 justify-center pt-20">
+          {/* PROJECT CARD 1 */}
+          <div className="border-2 relative border-solid border-black bg-light p-10 bg-white max-w-lg w-full">
+            {/* Background Accent */}
+            <div className="absolute left-3 top-6 bottom-3 -z-10 w-[100%] h-[97.8%]  bg-[#C73659]" />
+            
+            {/* Image */}
+            <Image
+            src="/ONIBI.png"
+            alt="Project Image 1"
+            width={500}
+            height={400} 
+            objectFit="cover"
+            className="rounded-t-[2rem] rounded-[1rem]"/>
+            
+            {/* Header */}
+            <h2 className="font-bold text-3xl text-center text-black mt-4">ONIBI</h2>
+            
+            {/* Text */}
+            <p className="text-black text-lg text-center mt-2">This is a Static website that i have created for Aniflow interactive studios u can check them out in steam click the button to check-out the website ^_^</p>
+            
+            {/* Button */}
+            <Link href="https://aniflowinteractive.com/" target="_blank"><MyButton buttonText="Learn More" /></Link> 
+          </div>
+
+          {/* PROJECT CARD 2 */}
+          <div className="border-2 relative border-solid border-black bg-light p-10 bg-white max-w-lg w-full">
+            {/* Background Accent */}
+            <div className="absolute left-3 top-6 bottom-3 -z-10 w-[100%] h-[97.8%]  bg-[#C73659]" />
+            
+            {/* Image */}
+            <Image
+            src="/Piano.jpg"
+            alt="Project Image 1"
+            width={500}
+            height={400} 
+            objectFit="cover"
+            className="rounded-t-[2rem] rounded-[1rem]"
+    />
+            
+            {/* Header */}
+            <h2 className="font-bold text-3xl text-center text-black mt-4">Piano Game</h2>
+            
+            {/* Text */}
+            <p className="text-black text-lg text-center mt-2">This is a personal project that i did while i was pretty new to javascript have a play around with it and let me knows your thoughts</p>
+            
+            {/* Button */}
+            <Link href="https://github.com/Shinzohan/piano" target="_blank"><MyButton buttonText="Learn More" /></Link>
+          </div>
+        </div>
+
+        {/* svg */}
+        <div className="flex justify-center items-center mt-20">
+          <motion.svg
+            initial={{ y: 0 }}
+            animate={{ opacity: 1, y: "20px" }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut"}}
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width={100}
+            height={100}
+          >
+            {/* First arrow */}
+            <path
+              d="M24 18 L30 6 L24 12 L18 6 L24 18"
+              stroke="#000000"
+              strokeWidth="1"
+              fill="yellow"
+            />
+    
+            {/* Second arrow */}
+            <path
+              d="M24 42 L30 30 L24 36 L18 30 L24 42"
+              stroke="#000000"
+              strokeWidth="1"
+              fill="yellow"
+            />
+          </motion.svg>
+        </div>
+
+        {/* Project Section */}
+        <div className="h-full flex flex-col items-center justify-center text-white bg-black ">
+        <div className="p-10 rounded-[2rem] bg-white relative">
+          
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-black">Do you have a project?</h1></div>
+        <div className="relative">
+          <motion.svg
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, ease: "linear", repeat: Infinity }}
+            viewBox="0 0 300 300"
+            className="w-64 h-64 md:w-[500px] md:h-[500px]"
+          >
+            <defs>
+              <path
+                id="circlePath"
+                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+              />
+            </defs>
+            <text fill="white">
+              <textPath xlinkHref="#circlePath" className="text-xl">
+                Full-stack Developer and UI Designer
+              </textPath>
+            </text>
+          </motion.svg>
+          <Link
+            href="/contact"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-[#F3D0D7] text-black rounded-full flex items-center justify-center"
+          >
+            Hire Me
+          </Link>
+        </div>
+        </div>
+        
+      
+      </div>
+    </motion.div>
+  );
+};
+
+export default Portfoliopage;
+

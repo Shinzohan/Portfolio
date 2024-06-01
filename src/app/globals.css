@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poetsen+One&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply font-sans;
+  }
+
+
+  /* CSS */
+.shadow-custom {
+  box-shadow: 0 0 10px rgba(199, 54, 89, 0.9);
+}
+
