@@ -98,11 +98,15 @@ const Navbar =() => {
             </div>
             {/* logo */}
             <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
-                <Link href="/" className="text-sm bg-black rounded-md p-4 font-semibold flex items-center justify-center shadow-custom">
-                <span className="text-white text-lg mr-1">Shinzohan</span>
-        
-                </Link>
-            </div>
+        <div className="relative">
+        {/* Background Accent */}
+        <div className="absolute -bottom-1.5 left-1.5 w-full h-full bg-[#C73659] rounded-md"></div>
+        {/* Logo Container */}
+        <Link href="/" className="relative bg-gray-800 text-white px-6 py-2 rounded-md flex items-center justify-center">
+          <span className="text-xl font-bold">SHINZOHAN</span>
+         </Link>
+         </div>
+       </div>
             {/* socials */}
             <div className='hidden md:flex gap-4 w-1/3 '>
             <Link href="https://github.com/Shinzohan" target="_blank">
@@ -144,6 +148,19 @@ const Navbar =() => {
                         <Link href={link.url}>{link.title}</Link>
                         </motion.div>
                     ))}
+                     <Link href="https://github.com/Shinzohan" target="_blank">
+                 <div className="p-2 bg-white rounded-full">
+                  <Image 
+                  loader={myLoader}
+                  src="/github.png" alt='' width={24} height={24} />
+                  </div>
+                  </Link>
+                 <Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
+                 <div className="p-2 bg-white rounded-full">
+                <Image
+                loader={myLoader} src="/linkedin.png" alt='' width={24} height={24} />
+                </div>
+                </Link>
                 </motion.div>
                 
 

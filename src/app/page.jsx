@@ -19,7 +19,7 @@ const Homepage = () => {
     animate={{ y: "0%" }}
     transition={{ duration: 1 }}
   >
-    <div className="h-full w-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-hidden font-sans">
+    <div className="h-full w-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll font-sans">
       {/* IMAGE CONTAINER */}
       <div className="relative w-full flex justify-center items-center mb-8">
         <div className="relative w-[300px] h-[300px] xl:w-[300px] xl:h-[400px]">
@@ -63,7 +63,7 @@ const Homepage = () => {
       <div className="w-full lg:w-1/2 flex flex-col items-center gap-8">
         {/* TITLE */}
         <div className="text-center text-white">
-    <h1 className="text-4xl md:text-4xl font-bold">Shinzohan</h1>
+    <h1 className="text-4xl md:text-4xl font-bold">Harsh Shrivastav</h1>
     <h2 className="text-2xl md:text-4xl font-bold">Web Developer</h2>
 </div>
 
@@ -76,23 +76,30 @@ const Homepage = () => {
         {/* BUTTONS */}
         <div className="w-full flex gap-4 justify-center lg:mb-6 pt-5 relative z-10">
         <Link href="/portfolio" passHref>
+      <motion.div className="relative inline-block">
         <motion.button
-        whileHover={{ scale: 1.05, boxShadow: "0px 4px 10px rgba(0, 255, 153, 1)" }}
-        whileTap={{ scale: 0.95 }}
-         transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="p-4 rounded-lg ring-1 ring-[#C73659] bg-black text-white shadow-custom"
->
-    View My Work
-     </motion.button></Link>
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95,rotate:"2deg" }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="p-4 bg-white text-black ring-1 ring-[#C73659] relative z-20"
+        >
+         My work
+        </motion.button>
+        <div className="absolute inset-x-0 bottom-0 left-1 p-5 bg-[#C73659] w-[102%] h-[100%] transform translate-y-2"></div>
+      </motion.div>
+    </Link>
      <Link href="/contact" passHref>
-     <motion.button
-    whileHover={{ scale: 1.05, boxShadow: "0px 4px 10px rgba(0, 255, 153, 1)" }}
-    whileTap={{ scale: 0.95 }}
-    transition={{ duration: 0.2, ease: "easeInOut" }}
-    className="p-4 rounded-lg ring-1 ring-[#C73659] bg-black text-white shadow-custom"
->
-    Contact Me
-</motion.button></Link>
+     <motion.div className="relative inline-block">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95, rotate:"2deg" }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="p-4 bg-white text-black ring-1 ring-[#C73659] relative z-20"
+        >
+          Contact
+        </motion.button>
+        <div className="absolute inset-x-0 bottom-0 left-1 p-5 bg-[#C73659] w-[102%] h-[100%] transform translate-y-2"></div>
+      </motion.div></Link>
 
 </div>
 

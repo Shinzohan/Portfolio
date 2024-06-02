@@ -7,8 +7,8 @@ import Animatedpage from "@/components/Animatedpage";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Harsh Portfolio",
-  description: "DAMN BOI",
+  title: "Shinzo's Portfolio",
+  description: "^_~",
 };
 
 export default function RootLayout({ children }) {
