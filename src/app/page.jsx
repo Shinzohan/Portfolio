@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Notification from "@/components/Notification";
-import Downloading from "@/components/downloading";
 import Link from "next/link";
 import { myLoader } from "../../imageLoader";
 import "./globals.css"
@@ -81,7 +80,7 @@ const Homepage = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95,rotate:"2deg" }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="p-4 bg-white text-black ring-1 ring-[#C73659] relative z-20"
+          className="p-4 bg-black text-white ring-1 ring-[#C73659] relative z-20"
         >
          My work
         </motion.button>
@@ -94,7 +93,7 @@ const Homepage = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95, rotate:"2deg" }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="p-4 bg-white text-black ring-1 ring-[#C73659] relative z-20"
+          className="p-4 bg-black text-white ring-1 ring-[#C73659] relative z-20"
         >
           Contact
         </motion.button>
@@ -105,11 +104,10 @@ const Homepage = () => {
 
       </div>
       <Notification
-                    className="hidden absolute left-[500px] bottom-[19rem] w-[18rem] xl:flex text-white"
+                    className="hidden absolute xl:left-[500px] xl:bottom-[19rem] w-[18rem] xl:flex text-white "
                     title="Worked for"
                   />
     </div>
-   <Downloading />
   </motion.div>
  
   

@@ -67,4 +67,3 @@ const AnimatedPage = ({ children }) => {
 }
 
 export default AnimatedPage;
-
