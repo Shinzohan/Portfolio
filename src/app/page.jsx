@@ -103,10 +103,7 @@ const Homepage = () => {
 </div>
 
       </div>
-      <Notification
-                    className="hidden absolute xl:left-[500px] xl:bottom-[19rem] w-[18rem] xl:flex text-white "
-                    title="Worked for"
-                  />
+  
     </div>
   </motion.div>
  

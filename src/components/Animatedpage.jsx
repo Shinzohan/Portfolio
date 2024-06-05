@@ -1,7 +1,6 @@
 "use client";
 
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 import Navbar from './navbar';
 import { usePathname } from 'next/navigation';
@@ -10,9 +9,9 @@ const AnimatedPage = ({ children }) => {
     const pathName = usePathname();
 
     const blockVariants = {
-        initial: { scaleY: 1, },
-        animate: { scaleY: 0, height: "140vh" },
-        exit: { scaleY: 1,  }
+        initial: { scaleY: 1 },
+        animate: { scaleY: 0, height: "200vh" },
+        exit: { scaleY: 1 }
     };
 
     const blockTransition = { duration: 0.6, ease: "easeInOut" };
@@ -22,30 +21,44 @@ const AnimatedPage = ({ children }) => {
             <div key={pathName} className="w-screen h-screen bg-black overflow-hidden relative">
                 
                 {/* Animated Blocks */}
-                <div className="absolute inset-0 flex flex-wrap z-40 pointer-events-none">
+                <div className="absolute inset-0 flex z-40 pointer-events-none">
                     {[...Array(10)].map((_, i) => (
                         <motion.div
                             key={i}
-                            className=" w-[10%] h-full bg-[#C73659]" 
+                            className="h-full bg-[#C73659]"
                             initial="initial"
                             animate="animate"
                             exit="exit"
                             variants={blockVariants}
                             transition={{ ...blockTransition, delay: i * 0.05 }}
+                            style={{ 
+                                width: "10.1%", 
+                                backfaceVisibility: "hidden", 
+                                transform: "translate3d(0, 0, 0)",
+                                willChange: "transform, opacity",
+                                marginLeft: i === 0 ? "0" : "-1px" 
+                            }}
                         />
                     ))}
                 </div>
 
+                {/* Text Animation */}
                 <motion.div
-                    className="fixed m-auto top-0 bottom-0 left-0 right-0 text-black text-8xl cursor-default z-40 pointer-events-none w-fit h-fit"
+                    className="fixed m-auto top-0 bottom-0 left-0 right-0 text-black text-8xl cursor-default z-50 pointer-events-none w-fit h-fit"
                     initial={{ opacity: 1, scale: 0.8 }}
                     animate={{ opacity: 0, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
+                    style={{ 
+                        backfaceVisibility: "hidden", 
+                        transform: "translate3d(0, 0, 0) scale(1.0001)",
+                        willChange: "transform, opacity"
+                    }}
                 >
                     {pathName.substring(1)}
                 </motion.div>
 
+                {/* Main Content */}
                 <div className="relative z-30">
                     <div className="h-24">
                         <Navbar />
@@ -53,10 +66,15 @@ const AnimatedPage = ({ children }) => {
 
                     <motion.div
                         className="h-[calc(100vh-6rem)] z-10"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.2, ease: "easeInOut" }}
+                        style={{ 
+                            backfaceVisibility: "hidden", 
+                            transform: "translate3d(0, 0, 0) scale(1.0001)",
+                            willChange: "transform, opacity"
+                        }}
                     >
                         {children}
                     </motion.div>
