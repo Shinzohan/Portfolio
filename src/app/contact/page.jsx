@@ -52,7 +52,7 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 font-sans">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl text-white">
           <div>
@@ -92,7 +92,7 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none text-base sm:text-lg md:text-xl"
           />
           <span className="text-base sm:text-lg md:text-xl">Regards</span>
-          <button className="bg-blue-200 rounded font-semibold text-black p-2 sm:p-4 text-base sm:text-lg md:text-xl">
+          <button className="rounded-2xl border-2 border-dashed border-white bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#FF8F00] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
             Send
           </button>
           {success && (

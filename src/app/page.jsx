@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Notification from "@/components/Notification";
 import Link from "next/link";
 import { myLoader } from "../../imageLoader";
 import "./globals.css"
@@ -76,28 +75,20 @@ const Homepage = () => {
         <div className="w-full flex gap-4 justify-center lg:mb-6 pt-5 relative z-10">
         <Link href="/portfolio" passHref>
       <motion.div className="relative inline-block">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95,rotate:"2deg" }}
-          transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="p-4 bg-black text-white ring-1 ring-[#C73659] relative z-20"
-        >
-         My work
-        </motion.button>
-        <div className="absolute inset-x-0 bottom-0 left-1 p-5 bg-[#C73659] w-[102%] h-[100%] transform translate-y-2"></div>
+      <motion.button className="rounded-2xl border-2 border-dashed border-[#C73659] bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#C73659] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+
+      My Work
+
+      </motion.button>
       </motion.div>
     </Link>
      <Link href="/contact" passHref>
      <motion.div className="relative inline-block">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95, rotate:"2deg" }}
-          transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="p-4 bg-black text-white ring-1 ring-[#C73659] relative z-20"
-        >
-          Contact
-        </motion.button>
-        <div className="absolute inset-x-0 bottom-0 left-1 p-5 bg-[#C73659] w-[102%] h-[100%] transform translate-y-2"></div>
+     <motion.button className="rounded-2xl border-2 border-dashed border-[#C73659] bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#C73659] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+
+     Contact
+
+    </motion.button>
       </motion.div></Link>
 
 </div>
@@ -105,6 +96,7 @@ const Homepage = () => {
       </div>
   
     </div>
+   
   </motion.div>
  
   

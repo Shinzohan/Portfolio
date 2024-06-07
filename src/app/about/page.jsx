@@ -22,6 +22,7 @@ const AboutPage = () => {
     
       
     >
+  
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex justify-center font-sans relative z-10">
         {/* LEFT DIV */}
