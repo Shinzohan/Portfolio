@@ -97,7 +97,7 @@ const ContactPage = () => {
           </button>
           {success && (
             <span className="text-green-600 font-semibold">
-              Your message has been sent successfully👻!
+              Your message has been sent successfully❤️!
             </span>
           )}
           {error && (
