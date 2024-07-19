@@ -45,7 +45,7 @@ const Portfoliopage = () => {
             <h2 className="font-bold text-3xl text-center text-black mt-4">ONIBI</h2>
             
             {/* Text */}
-            <p className="text-black text-lg text-center mt-2">This is a Static website that i have created for Aniflow interactive studios u can check them out in steam click the button to check-out the website ^_^</p>
+            <p className="text-black text-lg text-center mt-2">This is a Static website that I have created for Aniflow interactive studios. You can check them out on Steam. Click the button to check-out the website ^_^</p>
             
             {/* Button */}
             <Link href="https://aniflowinteractive.com/" target="_blank"><MyButton buttonText="Learn More" /></Link> 
@@ -70,7 +70,7 @@ const Portfoliopage = () => {
             <h2 className="font-bold text-3xl text-center text-black mt-4">Piano Game</h2>
             
             {/* Text */}
-            <p className="text-black text-lg text-center mt-2">This is a personal project that i did while i was pretty new to javascript have a play around with it and let me knows your thoughts</p>
+            <p className="text-black text-lg text-center mt-2">This is a personal project that I did while I was pretty new to JavaScript. Have a play around with it and let me know your thoughts.</p>
             
             {/* Button */}
             <Link href="https://github.com/Shinzohan/piano" target="_blank"><MyButton buttonText="Learn More" /></Link>
@@ -131,4 +131,3 @@ const Portfoliopage = () => {
 };
 
 export default Portfoliopage;
-

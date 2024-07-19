@@ -27,7 +27,6 @@ const Poll = () => {
 };
 
 const Options = ({ votes, setVotes }) => {
-  const totalVotes = votes.reduce((acc, cv) => (acc += cv.votes), 0);
 
   const handleIncrementVote = (vote) => {
     const newVote = { ...vote, votes: vote.votes + 1 };

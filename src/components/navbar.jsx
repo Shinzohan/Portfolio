@@ -118,7 +118,7 @@ const Navbar =() => {
     </Link>
     <Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
       <motion.button
-        className="p-2  rounded-full bg-blue-500 text-2xl"
+        className="p-2  rounded-full bg-white text-black text-2xl"
         whileHover={{ scale: 1.1,}}
       >
         <SiLinkedin />
@@ -126,7 +126,7 @@ const Navbar =() => {
     </Link>
     <Link href="https://dribbble.com/Shinzohan" target="_blank">
       <motion.button
-        className="p-2  rounded-full bg-pink-400 text-2xl"
+        className="p-2  rounded-full bg-white text-black text-2xl"
         whileHover={{ scale: 1.1, }}
       >
         <SiDribbble />
