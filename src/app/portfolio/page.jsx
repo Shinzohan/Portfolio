@@ -34,12 +34,13 @@ const Portfoliopage = () => {
             
             {/* Image */}
             <Image
-            loader={myLoader}
-            src="/ONIBI.png"
-            alt="Project Image 1"
-            width={500}
-            height={400} 
-            className="rounded-t-[2rem] rounded-[1rem] object-cover"/>
+              loader={myLoader}
+              src="/ONIBI.png"
+              alt="Project Image 1"
+              width={500}
+              height={400} 
+              className="rounded-t-[2rem] rounded-[1rem] object-cover"
+            />
             
             {/* Header */}
             <h2 className="font-bold text-3xl text-center text-black mt-4">ONIBI</h2>
@@ -48,7 +49,9 @@ const Portfoliopage = () => {
             <p className="text-black text-lg text-center mt-2">This is a Static website that I have created for Aniflow interactive studios. You can check them out on Steam. Click the button to check-out the website ^_^</p>
             
             {/* Button */}
-            <Link href="https://aniflowinteractive.com/" target="_blank"><MyButton buttonText="Learn More" /></Link> 
+            <Link href="https://aniflowinteractive.com/" target="_blank">
+              <MyButton buttonText="Learn More" />
+            </Link> 
           </div>
 
           {/* PROJECT CARD 2 */}
@@ -58,13 +61,13 @@ const Portfoliopage = () => {
             
             {/* Image */}
             <Image
-            loader={myLoader}
-            src="/Piano.jpg"
-            alt="Project Image 1"
-            width={500}
-            height={400} 
-            className="rounded-t-[2rem] rounded-[1rem] object-cover"
-    />
+              loader={myLoader}
+              src="/Piano.jpg"
+              alt="Project Image 1"
+              width={500}
+              height={400} 
+              className="rounded-t-[2rem] rounded-[1rem] object-cover"
+            />
             
             {/* Header */}
             <h2 className="font-bold text-3xl text-center text-black mt-4">Piano Game</h2>
@@ -73,7 +76,9 @@ const Portfoliopage = () => {
             <p className="text-black text-lg text-center mt-2">This is a personal project that I did while I was pretty new to JavaScript. Have a play around with it and let me know your thoughts.</p>
             
             {/* Button */}
-            <Link href="https://github.com/Shinzohan/piano" target="_blank"><MyButton buttonText="Learn More" /></Link>
+            <Link href="https://github.com/Shinzohan/piano" target="_blank">
+              <MyButton buttonText="Learn More" />
+            </Link>
           </div>
         </div>
 
@@ -109,23 +114,14 @@ const Portfoliopage = () => {
 
         {/* Project Section */}
         <div className="h-full flex flex-col items-center justify-center text-white bg-black ">
-        <div className="p-10 rounded-[2rem] relative">
-          
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-white">what's your opinion</h1></div>
-        <div className="relative p-5">
-
-          <Poll/>
-         
+          <div className="p-10 rounded-[2rem] relative">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-white">what&apos;s your opinion</h1>
+          </div>
+          <div className="relative p-5">
+            <Poll/>
+          </div>
         </div>
-
-        
-        </div>
-        
-      
       </div>
-
-
-  
     </motion.div>
   );
 };
