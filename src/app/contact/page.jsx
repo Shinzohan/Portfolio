@@ -2,8 +2,9 @@
 
 
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { Suspense, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import StarField from "@/components/starry";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
@@ -52,7 +53,7 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 font-sans">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 font-idk">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl text-white">
           <div>
@@ -77,9 +78,9 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="w-full lg:w-1/2 bg-red-50 rounded-xl text-lg flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-8 md:p-12 lg:p-16 shadow-lg"
+          className="w-full lg:w-1/2 bg-red-50 rounded-xl text-lg flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-8 md:p-12 lg:p-16 shadow-lg z-10"
         >
-          <span className="text-base sm:text-lg md:text-xl">Dear Shinzo,</span>
+          <span className="text-base sm:text-lg md:text-xl">Dear Harsh,</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none text-base sm:text-lg md:text-xl"
@@ -107,6 +108,10 @@ const ContactPage = () => {
           )}
         </form>
       </div>
+
+      <Suspense fallback={<div>Loading...</div>}>
+      <StarField />
+    </Suspense>
     </motion.div>
   );
 };

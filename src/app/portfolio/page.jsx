@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Poll from "@/components/downloading";
 import Link from "next/link";
 import MyButton from "@/components/Button";
 import { myLoader } from "../../../imageLoader";
@@ -16,7 +17,7 @@ const Portfoliopage = () => {
       transition={{ duration: 1 }}
     >
       {/* Container to remove white space */}
-      <div className="h-full overflow-scroll justify-center font-sans relative z-10 ">
+      <div className="h-full overflow-scroll justify-center font-idk relative z-10 ">
         {/* Title */}
         <div className="flex justify-center mt-10">
           <div className="border-2 relative border-solid border-black bg-light p-10 bg-white max-w-lg w-full flex justify-center text-4xl">
@@ -108,39 +109,23 @@ const Portfoliopage = () => {
 
         {/* Project Section */}
         <div className="h-full flex flex-col items-center justify-center text-white bg-black ">
-        <div className="p-10 rounded-[2rem] bg-white relative">
+        <div className="p-10 rounded-[2rem] relative">
           
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-black">Do you have a project?</h1></div>
-        <div className="relative">
-          <motion.svg
-            animate={{ rotate: 360 }}
-            transition={{ duration: 8, ease: "linear", repeat: Infinity }}
-            viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px]"
-          >
-            <defs>
-              <path
-                id="circlePath"
-                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-              />
-            </defs>
-            <text fill="white">
-              <textPath xlinkHref="#circlePath" className="text-xl">
-                Full-stack Developer and UI Designer
-              </textPath>
-            </text>
-          </motion.svg>
-          <Link
-            href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-[#F3D0D7] text-black rounded-full flex items-center justify-center"
-          >
-            Hire Me
-          </Link>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-white">what's your opinion</h1></div>
+        <div className="relative p-5">
+
+          <Poll/>
+         
         </div>
+
+        
         </div>
         
       
       </div>
+
+
+  
     </motion.div>
   );
 };

@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['DM Sans', 'Helvetica', 'Arial', 'sans-serif'],
+        idk: ["'Josefin Sans'"]
       },
     },
   },

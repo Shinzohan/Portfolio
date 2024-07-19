@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
+import { Suspense } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { myLoader } from "../../imageLoader";
+import StarField from "@/components/starry";
 import "./globals.css"
 
 
@@ -17,7 +19,7 @@ const Homepage = () => {
     animate={{ y: "0%" }}
     transition={{ duration: 1 }}
   >
-    <div className="h-full w-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll font-sans">
+    <div className="h-full w-full flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll font-idk">
       {/* IMAGE CONTAINER */}
       <div className="relative w-full flex justify-center items-center mb-8">
         <div className="relative w-[300px] h-[300px] xl:w-[300px] xl:h-[400px]">
@@ -27,7 +29,7 @@ const Homepage = () => {
          alt="Hero"
          fill
          sizes ="true"
-         className="object-contain"
+         className="object-contain z-10"
          />
           <motion.svg
             className="absolute inset-0 w-full h-full"
@@ -61,8 +63,8 @@ const Homepage = () => {
       <div className="w-full lg:w-1/2 flex flex-col items-center gap-8">
         {/* TITLE */}
         <div className="text-center text-white">
-    <h1 className="text-4xl md:text-4xl font-bold">Harsh Shrivastav</h1>
-    <h2 className="text-2xl md:text-4xl font-bold">Web Developer</h2>
+    <h1 className="text-4xl md:text-5xl font-bold">Harsh Shrivastav</h1>
+    <h2 className="text-2xl md:text-3xl font-bold">Full-stack Developer</h2>
 </div>
 
         {/* DESC */}
@@ -96,6 +98,9 @@ const Homepage = () => {
       </div>
   
     </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <StarField />
+    </Suspense>
    
   </motion.div>
  

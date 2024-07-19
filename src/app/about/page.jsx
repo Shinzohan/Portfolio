@@ -24,7 +24,7 @@ const AboutPage = () => {
     >
   
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll lg:flex justify-center font-sans relative z-10">
+      <div className="h-full overflow-scroll lg:flex justify-center font-idk relative z-10">
         {/* LEFT DIV */}
         
 
@@ -38,7 +38,7 @@ const AboutPage = () => {
             <div className="border-2 relative border-solid border-black bg-light p-10 bg-white ">
            <div className="absolute left-4 top-4 bottom-3 -z-10 w-[99%] h-[96%]  bg-[#C73659]" />
           {/* Content for the left div */}
-          <p className="text-black text-lg flex justify-center">Im always ready to learn new methods as a programmer besides that im also a gamer ^_^</p>
+          <p className="text-black text-lg flex justify-center">Im always ready to learn new methods as a programmer besides that im also a gamer.</p>
            </div>
             <div className="border-2 relative border-solid border-black bg-light p-10 bg-white ">
               <div className="absolute left-4 top-5 bottom-3 -z-10 w-[99%] h-[96.4%]  bg-[#C73659]" />
@@ -117,14 +117,9 @@ const AboutPage = () => {
                 Next.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                SCSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
                 Tailwind CSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                MongoDB
-              </div>
+             
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
                 PostgreSQL
               </div>
@@ -140,24 +135,15 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
                 Framer Motion
               </div>
+            
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                Three.js
+                TypeScript
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                Bootstrap
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                Webpack
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                vue.js
-              </div>
+            
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
                 Docker
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
-                es6
-              </div>
+            
               <div className="rounded  p-2 text-sm cursor-pointer bg-[#C73659] text-black hover:bg-white hover:text-black">
                 Version Control
               </div>
