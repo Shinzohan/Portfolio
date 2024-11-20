@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { VanishList } from "@/components/downloading";
 import Link from "next/link";
 import MyButton from "@/components/Button";
 import { myLoader } from "../../../imageLoader";
