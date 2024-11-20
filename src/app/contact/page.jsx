@@ -80,7 +80,7 @@ const ContactPage = () => {
           ref={form}
           className="w-full lg:w-1/2 bg-red-50 rounded-xl text-lg flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-8 md:p-12 lg:p-16 shadow-lg z-10"
         >
-          <span className="text-base sm:text-lg md:text-xl">Dear Harsh,</span>
+          <span className="text-base sm:text-lg md:text-xl">Dear Shinzo,</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none text-base sm:text-lg md:text-xl"
