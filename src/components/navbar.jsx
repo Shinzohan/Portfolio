@@ -94,30 +94,34 @@ const Navbar = () => {
             </div>
             {/* socials */}
             <div className="hidden md:flex gap-4 w-1/3">
-                <Link href="https://github.com/Shinzohan" target="_blank">
-                    <motion.button
-                        className="p-2 rounded-full bg-white text-black text-2xl"
-                        whileHover={{ scale: 1.1 }}
-                    >
-                        <FaGithub />
-                    </motion.button>
-                </Link>
-                <Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
-                    <motion.button
-                        className="p-2 rounded-full bg-white text-black text-2xl"
-                        whileHover={{ scale: 1.1 }}
-                    >
-                        <FaLinkedin />
-                    </motion.button>
-                </Link>
-                <Link href="https://dribbble.com/Shinzohan" target="_blank">
-                    <motion.button
-                        className="p-2 rounded-full bg-white text-black text-2xl"
-                        whileHover={{ scale: 1.1 }}
-                    >
-                        <FaDribbble />
-                    </motion.button>
-                </Link>
+            <Link href="https://github.com/Shinzohan" target="_blank">
+    <motion.button
+        className="p-2 rounded-full bg-white text-black text-3xl"
+        whileHover={{ rotate: 360 }} 
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
+        <FaGithub />
+    </motion.button>
+</Link>
+<Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
+    <motion.button
+        className="p-2 rounded-full bg-blue-500 text-white text-3xl"
+        whileHover={{ rotate: 360 }} 
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
+        <FaLinkedin />
+    </motion.button>
+</Link>
+<Link href="https://dribbble.com/Shinzohan" target="_blank">
+    <motion.button
+        className="p-2 rounded-full bg-pink-400 text-white text-3xl"
+        whileHover={{ rotate: 360 }} 
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
+        <FaDribbble />
+    </motion.button>
+</Link>
+
             </div>
             {/* responsive menu */}
             <div className='md:hidden'>

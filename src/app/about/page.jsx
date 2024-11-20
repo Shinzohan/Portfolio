@@ -38,7 +38,7 @@ const AboutPage = () => {
             <div className="border-2 relative border-solid border-black bg-light p-10 bg-white ">
            <div className="absolute left-4 top-4 bottom-3 -z-10 w-[99%] h-[96%]  bg-[#C73659]" />
           {/* Content for the left div */}
-          <p className="text-black text-lg flex justify-center">Hi my name is harsh and im a full-stack web developer in designing, implementing, testing, and maintaining robust and scalable server-side applications. Proficient in multiple programming languages, I am seeking an entry-level job.</p>
+          <p className="text-black text-lg flex justify-center">Hi my name is Shinzo and im a full-stack web developer in designing, implementing, testing, and maintaining robust and scalable server-side applications. Proficient in multiple programming languages, I am seeking an entry-level job.</p>
            </div>
             <div className="border-2 relative border-solid border-black bg-light p-10 bg-white ">
               <div className="absolute left-4 top-5 bottom-3 -z-10 w-[99%] h-[96.4%]  bg-[#C73659]" />

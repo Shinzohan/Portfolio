@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Poll from "@/components/downloading";
+import { VanishList } from "@/components/downloading";
 import Link from "next/link";
 import MyButton from "@/components/Button";
 import { myLoader } from "../../../imageLoader";
@@ -115,14 +115,7 @@ const Portfoliopage = () => {
         </div>
 
         {/* Project Section */}
-        <div className="h-full flex flex-col items-center justify-center text-white bg-black ">
-          <div className="p-10 rounded-[2rem] relative">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-white">what&apos;s your opinion</h1>
-          </div>
-          <div className="relative p-5">
-            <Poll/>
-          </div>
-        </div>
+       
       </div>
     </motion.div>
   );
