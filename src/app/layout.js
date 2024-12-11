@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
               🚧 Under Construction 🚧
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              We're working hard to bring you something amazing! Check back
+              We are working hard to bring you something amazing! Check back
               soon.
             </p>
           </div>
