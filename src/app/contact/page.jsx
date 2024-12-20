@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { Heart, Send, Sparkles, AlertCircle, Loader2, Mail, Stars, MessageCircle } from "lucide-react";
+import { Heart, Send, Sparkles, AlertCircle, Loader2, } from "lucide-react";
 
 const ContactPage = () => {
   const [status, setStatus] = useState("idle");
@@ -87,15 +87,7 @@ const ContactPage = () => {
       );
   };
 
-  const floatingAnimation = {
-    y: [-10, 10],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut",
-    },
-  };
+ 
 
   const buttonContent = BUTTON_STATES[status].content;
   const buttonStyles = `group relative text-white rounded-2xl px-8 py-4 font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${BUTTON_STATES[status].styles}`;

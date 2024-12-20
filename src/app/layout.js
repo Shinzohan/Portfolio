@@ -1,13 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Animatedpage from "@/components/Animatedpage";
-import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shinzo's Portfolio",
-  description: "^_~",
+  description: "This is my freelancer portfolio to showcase my work.",
 };
 
 export default function RootLayout({ children }) {
