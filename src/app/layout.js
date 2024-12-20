@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Animatedpage from "@/components/Animatedpage";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const showUnderConstruction = true; // Toggle this to show or hide the "Under Construction" message
+  const showUnderConstruction = false; // Toggle this to show or hide the "Under Construction" message
 
   return (
     <html lang="en">
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
             </p>
           </div>
         ) : (
+          
           <Animatedpage>{children}</Animatedpage>
         )}
       </body>

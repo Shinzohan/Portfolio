@@ -25,7 +25,7 @@ const AnimatedPage = ({ children }) => {
                     {[...Array(10)].map((_, i) => (
                         <motion.div
                             key={i}
-                            className="h-full bg-[#C73659]"
+                            className="h-full bg-purple-300"
                             initial="initial"
                             animate="animate"
                             exit="exit"
@@ -60,7 +60,7 @@ const AnimatedPage = ({ children }) => {
 
                 {/* Main Content */}
                 <div className="relative z-30">
-                    <div className="h-24">
+                    <div className="">
                         <Navbar />
                     </div>
 

@@ -7,7 +7,7 @@ const HoverButton = ({ buttonText }) => {
   return (
     <motion.div className="relative mt-4 mx-auto w-max">
       <motion.div
-        className="absolute top-3 left-0 w-full h-full bg-[#C73659] transform -translate-y-1.5 translate-x-1.5 rounded"
+        className="absolute top-3 left-0 w-full h-full bg-pink-300 transform -translate-y-1.5 translate-x-1.5 rounded"
         initial={{ opacity: isHovered ? 0 : 1 }}
         animate={{ opacity: isHovered ? 0 : 1 }}
         transition={{ duration: 0.5 }}
