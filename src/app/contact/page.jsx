@@ -109,7 +109,7 @@ const ContactPage = () => {
               className="relative inline-block"
             >
               <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                Let's Connect
+                Lets Connect
               </h1>
               <motion.div
                 className="absolute -right-8 -top-8"

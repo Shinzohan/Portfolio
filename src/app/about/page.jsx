@@ -28,20 +28,6 @@ const AboutPage = () => {
     }
   };
 
-  // Combine transforms for better performance
-  const floatAnimation = prefersReducedMotion ? {} : {
-    initial: { transform: "translateY(0) rotate(0deg)" },
-    animate: {
-      transform: ["translateY(-5px) rotate(-5deg)", "translateY(5px) rotate(5deg)"],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "easeInOut"
-      }
-    }
-  };
-
   // Reusable fade-in animation
   const fadeInAnimation = {
     initial: { opacity: 0 },
@@ -57,7 +43,7 @@ const AboutPage = () => {
       scale: 1,
       transition: {
         delay: index * 0.1,
-        duration: 0.3,
+        duration: 0.1,
         ease: "easeOut"
       }
     },
@@ -65,7 +51,7 @@ const AboutPage = () => {
       scale: 1.1,
       backgroundColor: "#FDF2F8",
       transition: {
-        duration: 0.2,
+        duration: 0.1,
         ease: "easeInOut"
       }
     }
@@ -115,7 +101,7 @@ const AboutPage = () => {
             >
               <div className="bg-pink-50 absolute inset-0 rounded-3xl -z-10 transform rotate-1" />
               <p className="text-gray-700 text-xl text-center leading-relaxed">
-                Hi! I'm Shinzo, a full-stack web developer who loves creating cute and functional websites! ✨
+                Hi! I am Shinzo, a full-stack web developer who loves creating cute and functional websites! ✨
               </p>
             </motion.div>
 
