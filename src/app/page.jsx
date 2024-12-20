@@ -26,10 +26,10 @@ const Homepage = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-      <div className="flex flex-col items-center justify-center px-8 md:px-12 lg:px-20 xl:px-48 font-idk h-full w-full z-20">
+      <div className="flex flex-col items-center justify-center px-8 md:px-12 lg:px-20 xl:px-48 mt-0 xl:mt-20 font-idk h-full w-full z-20">
         {/* IMAGE CONTAINER */}
         <div className="relative mt-10 lg:mt-5 w-full flex justify-center items-center mb-4 lg:mb-6">
-          <div className="relative w-[150px] h-[150px] md:w-[200px] md:h-[200px] xl:w-[300px] xl:h-[300px]">
+          <div className="relative w-[150px] h-[120px] md:w-[100px] md:h-[100px] xl:w-[170px] xl:h-[170px]">
             <Image
               loader={myLoader}
               src="/Hero-2.webp"

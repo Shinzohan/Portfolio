@@ -8,20 +8,20 @@ const SpiderWebButtons = () => {
     initial: { scaleY: 0 },
     animate: { 
       scaleY: 1,
-      transition: { duration: 2, ease: "easeOut" }
+      transition: { duration: 1.5, ease: "easeOut" }
     }
   };
 
   // Animation variants for the spider/button
   const spiderVariants = {
-    initial: { y: -100, opacity: 0 },
+    initial: { y: -50, opacity: 0 },
     animate: { 
       y: 0, 
       opacity: 1,
       transition: { 
-        duration: 0.2,
+        duration: 0.5,
         ease: "easeOut",
-        delay: 0.2
+        delay: 1.5 // Starts after the web animation
       }
     },
     hover: {
@@ -38,12 +38,14 @@ const SpiderWebButtons = () => {
       
       {/* First Spider Button */}
       <div className="relative z-20">
+        {/* Web String */}
         <motion.div 
-          className="h-24 w-0.5 bg-pink-300 origin-top mx-auto"
+          className="h-4 xl:h-24  w-0.5 bg-pink-300 origin-top mx-auto"
           variants={webStringVariants}
           initial="initial"
           animate="animate"
         />
+        {/* Spider Button */}
         <Link href="/portfolio">
           <motion.button
             className="relative bg-pink-300 hover:bg-black text-white px-8 py-4 rounded-full font-bold shadow-lg transform"
@@ -66,12 +68,14 @@ const SpiderWebButtons = () => {
 
       {/* Second Spider Button */}
       <div className="relative z-20">
+        {/* Web String */}
         <motion.div 
-          className="h-24 w-0.5 bg-pink-300 origin-top mx-auto"
+          className="h-4 w-0.5 xl:h-24  bg-pink-300 origin-top mx-auto"
           variants={webStringVariants}
           initial="initial"
           animate="animate"
         />
+        {/* Spider Button */}
         <Link href="/contact">
           <motion.button
             className="relative bg-pink-300 hover:bg-black text-white px-8 py-4 rounded-full font-bold shadow-lg transform"
