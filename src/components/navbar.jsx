@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="relative">
             {/* Sidebar Toggle Button */}
             <button
-                className="fixed top-5 left-5 w-12 h-12 flex flex-col items-center justify-center gap-1.5 z-50  bg-gradient-to-br from-zinc-800  to-black rounded-full shadow-lg transition-colors duration-300"
+                className="fixed no-tap-highlight top-5 left-5 w-12 h-12 flex flex-col items-center justify-center gap-1.5 z-50  bg-gradient-to-br from-zinc-800  to-black rounded-full shadow-lg transition-colors duration-300"
                 onClick={() => setOpen(!open)}
                 aria-label="Toggle Menu"
             >
@@ -79,7 +79,7 @@ const Navbar = () => {
                         initial="closed"
                         animate="opened"
                         exit="closed"
-                        className="fixed top-0 right-0 w-44 h-screen  bg-black justify-center text-white flex flex-col items-start p-6 space-y-8"
+                        className="fixed top-0 right-0 no-tap-highlight w-44 h-screen  bg-black justify-center text-white flex flex-col items-start p-6 space-y-8"
                         style={{ zIndex: 40 }}
                     >
                         {links.map((link) => (
@@ -93,7 +93,7 @@ const Navbar = () => {
                             </motion.div>
                         ))}
                         {/* Social Links */}
-                        <div className="absolute bottom-0 flex gap-2">
+                        <div className="absolute bottom-0 flex gap-2 no-tap-highlight">
                             <Link href="https://github.com/Shinzohan" target="_blank">
                                 <motion.button
                                     className="p-2 rounded-full bg- text-white text-2xl"

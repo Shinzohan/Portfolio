@@ -31,7 +31,8 @@ body {
   }
 }
 
-button:focus, a:focus {
-  outline: none;
+.no-tap-highlight {
+  -webkit-tap-highlight-color: transparent;
 }
+
 
