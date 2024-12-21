@@ -95,9 +95,9 @@ const ContactPage = () => {
   return (
     <motion.div
       className="h-screen bg-gradient-to-br from-zinc-800  to-black"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-12">
         {/* GREETING CONTAINER */}

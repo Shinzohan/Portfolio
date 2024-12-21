@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 
 
@@ -9,7 +9,12 @@
 
 body {
     @apply font-sans;
-  }
+    background-color: white;
+    background-image: url('/icon2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    }
 
 
   /* CSS */
