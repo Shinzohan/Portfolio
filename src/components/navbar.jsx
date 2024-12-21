@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaHome, FaUser, FaFolderOpen, FaEnvelope, FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import "../app/globals.css";
 
 const links = [
     { url: "/", icon: <FaHome /> },
@@ -49,7 +50,7 @@ const Navbar = () => {
         <div className="relative">
             {/* Sidebar Toggle Button */}
             <button
-                className="fixed top-5 left-5 w-12 h-12 flex flex-col items-center justify-center gap-1.5 z-50 bg-black rounded-full shadow-lg transition-colors duration-300"
+                className="fixed top-5 left-5 w-12 h-12 flex flex-col items-center justify-center gap-1.5 z-50  bg-gradient-to-br from-zinc-800  to-black rounded-full shadow-lg transition-colors duration-300"
                 onClick={() => setOpen(!open)}
                 aria-label="Toggle Menu"
             >
