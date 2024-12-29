@@ -61,9 +61,9 @@ const AboutPage = () => {
               <div className="space-y-8">
                 {[
                   {
-                    title: "Full-Stack Web Developer",
+                    title: "Frontend Developer",
                     company: "Aniflowinteractive",
-                    period: "2024 - Present",
+                    period: "2023 - 2024",
                     description: "Created a static website for an indie studio ✨"
                   },
                   {
@@ -73,10 +73,10 @@ const AboutPage = () => {
                     description: "Worked on backend systems in Unreal Engine 🎮"
                   },
                   {
-                    title: "IT Solutions Freelancer",
+                    title: "Wanna be Freelancer",
                     company: "Self-employed",
-                    period: "2020 - 2022",
-                    description: "Provided various IT solutions for clients 💻"
+                    period: "👊",
+                    description: "💻"
                   }
                 ].map((exp) => (
                   <div

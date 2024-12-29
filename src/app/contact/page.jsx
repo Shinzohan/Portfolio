@@ -128,7 +128,7 @@ const ContactPage = () => {
         <motion.form
           onSubmit={sendEmail}
           ref={form}
-          className="w-full lg:w-1/2 bg-black shadow-purple-400 rounded-3xl text-lg flex flex-col gap-6 justify-center p-8 md:p-12 shadow-lg"
+          className="w-full lg:w-1/2 bg-black shadow-purple-400 rounded-3xl text-lg flex flex-col gap-6 justify-center p-8 md:p-12 shadow-lg "
         >
           <span className="text-white text-base sm:text-lg md:text-xl">Say Hi~</span>
           <textarea

@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import "../app/globals.css";
 
 const HoverButton = ({ buttonText }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <motion.div className="relative mt-4 mx-auto w-max">
+    <motion.div className="relative mt-4 mx-auto w-max no-tap-highlight">
       <motion.div
         className="absolute top-3 left-0 w-full h-full bg-pink-300 transform -translate-y-1.5 translate-x-1.5 rounded"
         initial={{ opacity: isHovered ? 0 : 1 }}

@@ -92,33 +92,7 @@ const Navbar = () => {
                                 <Link href={link.url}>{link.url.slice(1) || "Home"}</Link>
                             </motion.div>
                         ))}
-                        {/* Social Links */}
-                        <div className="absolute bottom-0 flex gap-2 no-tap-highlight">
-                            <Link href="https://github.com/Shinzohan" target="_blank">
-                                <motion.button
-                                    className="p-2 rounded-full bg- text-white text-2xl"
-                                    whileHover={{ scale: 1.1 }}
-                                >
-                                    <FaGithub />
-                                </motion.button>
-                            </Link>
-                            <Link href="https://www.linkedin.com/in/harsh-shrivastav-7640462b8/" target="_blank">
-                                <motion.button
-                                    className="p-2 rounded-full  text-white text-2xl"
-                                    whileHover={{ scale: 1.1 }}
-                                >
-                                    <FaLinkedin />
-                                </motion.button>
-                            </Link>
-                            <Link href="https://dribbble.com/Shinzohan" target="_blank">
-                                <motion.button
-                                    className="p-2 rounded-full  text-white text-2xl"
-                                    whileHover={{ scale: 1.1 }}
-                                >
-                                    <FaDribbble />
-                                </motion.button>
-                            </Link>
-                        </div>
+                    
                     </motion.div>
                 )}
             </AnimatePresence>
