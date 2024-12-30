@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaHome, FaUser, FaFolderOpen, FaEnvelope, FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { FaHome, FaUser, FaFolderOpen, FaEnvelope,} from "react-icons/fa";
 import "../app/globals.css";
 
 const links = [
