@@ -111,10 +111,10 @@ const Homepage = () => {
           <div className="relative border-2 border-solid border-purple-300 bg-pink-100 p-6 rounded-[2rem] shadow-lg">
             <div className="absolute left-0 top-4 bottom-3 -z-10 w-[102%] h-[96%] rounded-[2rem] bg-purple-200" />
             <p className="md:text-xl text-center text-gray-700">
-              Looking for a front-end developer? Well, look no further! I'm
+              Looking for a front-end developer? Well, look no further! Im
               Shinzhan, skilled in front-end but also knowledgeable in
               back-end development. I bring clear communication and leverage
-              the latest technologies. Rest assured, I won't leave your
+              the latest technologies. Rest assured, I wont leave your
               project mid-way!
             </p>
           </div>
