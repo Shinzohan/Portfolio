@@ -36,7 +36,7 @@ const SpiderWebButtons = () => {
       <div className="relative z-20">
         {/* Web String */}
         <motion.div
-          className="xl:h-24 w-0.5 bg-purple-400 origin-top mx-auto shadow-lg shadow-purple-500"
+          className="xl:h-10 w-0.5 bg-purple-400 origin-top mx-auto shadow-lg shadow-purple-500"
           variants={webStringVariants}
           initial="initial"
           animate="animate"
@@ -66,7 +66,7 @@ const SpiderWebButtons = () => {
       <div className="relative z-20">
         {/* Web String */}
         <motion.div
-          className=" xl:h-24 w-0.5 bg-purple-400 origin-top mx-auto shadow-lg no-tap-highlight"
+          className=" xl:h-10 w-0.5 bg-purple-400 origin-top mx-auto shadow-lg no-tap-highlight"
           variants={webStringVariants}
           initial="initial"
           animate="animate"
